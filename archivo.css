@@ -1,4 +1,4 @@
-*, *:before, *:after {
+* { 
     margin: 0;
     padding: 0;
     outline: 0;
@@ -12,5 +12,29 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
+
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 940px;
+    gap: 15px;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+height: 250px;
+width: 300px;
+overflow: hidden;
+margin: auto;
+padding: 10px 30px;
+border-radius: 2%;
+border: 1px solid #fff;
+transition: all .4s ease-in-out;
+box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+text-align: center;
+background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
