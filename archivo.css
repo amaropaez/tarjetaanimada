@@ -1,4 +1,5 @@
-* {
+*,
+::before ::after {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -59,3 +60,94 @@ body {
     margin: 20px auto;
     transition: all 0.3s ease;
 }
+
+.card-encabezado {
+    position: relative;
+}
+
+.card-encabezado:before,
+.card-encabezado:after {
+    content: '';
+    position: absolute;
+    opacity: 0.7;
+}
+
+.card-encabezado:after {
+    border-radius: 50%;
+    z-index: 20;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 25px;
+}
+
+.card-encabezado:before {
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    left: -10px;
+    border-radius: 20px;
+    background-color: rgb(238, 42, 98);
+    transform: rotate(120deg)
+}
+
+
+.card-iconos {
+display: flex;
+justify-content: center;
+position: relative;
+margin-bottom: 15px;
+list-style: none;
+}
+
+.card-iconos li {
+border-radius: 50%;
+background-color:  #fff;
+height: 40px;
+width: 40px;
+margin: 0 5px;
+line-height: 40px;
+text-align: center;
+transform: scale(0);
+transition: all 0.5s ease;
+}
+
+.desplazar {
+    opacity: 0;
+transition: all 0.5s ease;
+transform: translate(-45px);
+}
+
+.agrandar {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.card:hover .agrandar {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.card:hover .desplazar {
+    transform: translate(0px);
+opacity: 1;
+} 
+
+.card-iconos li a {
+color: #7813d6;
+height: 100px;
+width: 100px;
+border-radius: 50px;
+background:  #fff;
+display: block;
+line-height: 40px;
+transition: all 0.3s;
+}
+
+.card-iconos li a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #7813d6;
+}
+
