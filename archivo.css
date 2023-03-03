@@ -1,5 +1,4 @@
-*
-::before ::after {
+* {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -94,29 +93,29 @@ body {
 
 
 .card-iconos {
-display: flex;
-justify-content: center;
-position: relative;
-margin-bottom: 15px;
-list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    list-style: none;
 }
 
 .card-iconos li {
-border-radius: 50%;
-background-color:  #fff;
-height: 40px;
-width: 40px;
-margin: 0 5px;
-line-height: 40px;
-text-align: center;
-transform: scale(0);
-transition: all 0.5s ease;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    text-align: center;
+    transform: scale(0);
+    transition: all 0.5s ease;
 }
 
 .desplazar {
     opacity: 0;
-transition: all 0.5s ease;
-transform: translate(-45px);
+    transition: all 0.5s ease;
+    transform: translate(-45px);
 }
 
 .agrandar {
@@ -132,18 +131,18 @@ transform: translate(-45px);
 
 .card:hover .desplazar {
     transform: translate(0px);
-opacity: 1;
-} 
+    opacity: 1;
+}
 
 .card-iconos li a {
-color: #7813d6;
-height: 100px;
-width: 100px;
-border-radius: 50px;
-background:  #fff;
-display: block;
-line-height: 40px;
-transition: all 0.3s;
+    color: #7813d6;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #fff;
+    display: block;
+    line-height: 40px;
+    transition: all 0.3s;
 }
 
 .card-iconos li a:hover {
@@ -182,8 +181,9 @@ transition: all 0.3s;
     padding: 10px;
     line-height: 25px;
 }
+
 .info-personal:nth-child(3) {
-margin: 15px 0;
+    margin: 15px 0;
 }
 
 .info-personal {
@@ -198,17 +198,17 @@ margin: 15px 0;
 
 .botones {
     color: #fff;
-border: none;
-border-radius: 30px;
-box-shadow:  0 0 4px rgba(0, 0, 0, 0.2);
-padding: 8px 15px;
-font-size: 16px;
-width: 80%;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-background: linear-gradient(90deg, #7579ff, #b224ef);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    padding: 8px 15px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #7579ff, #b224ef);
 }
 
 .botones:hover {
@@ -229,10 +229,8 @@ background: linear-gradient(90deg, #7579ff, #b224ef);
 }
 
 
-@media screen and (max-width: 852px){
+@media screen and (max-width: 852px) {
     .contenedor {
         gap: 5px;
     }
 }
-
-    
