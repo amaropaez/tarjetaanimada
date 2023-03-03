@@ -1,4 +1,4 @@
-*,
+*
 ::before ::after {
     margin: 0;
     padding: 0;
@@ -151,3 +151,88 @@ transition: all 0.3s;
     box-shadow: 0 0 5px #7813d6;
 }
 
+
+.card-iconos li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.card-iconos li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.card-iconos li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.card-iconos:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.card-iconos:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.card-iconos:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.info-personal:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 25px;
+}
+.info-personal:nth-child(3) {
+margin: 15px 0;
+}
+
+.info-personal {
+    color: #fff;
+}
+
+
+.card-acciones {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.botones {
+    color: #fff;
+border: none;
+border-radius: 30px;
+box-shadow:  0 0 4px rgba(0, 0, 0, 0.2);
+padding: 8px 15px;
+font-size: 16px;
+width: 80%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(90deg, #7579ff, #b224ef);
+}
+
+.botones:hover {
+    cursor: pointer;
+    width: 100%;
+}
+
+.botones span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 852px){
+    .contenedor {
+        gap: 5px;
+    }
+}
+
+    
